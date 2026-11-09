@@ -1,0 +1,230 @@
+
+/* =====================================
+   WEB DEVELOPMENT PAGE
+===================================== */
+
+.webdev-page {
+    --web-chocolate: #5b3828;
+    --web-dark: #302018;
+
+    background: #f7efe6;
+    padding: 35px 0 55px;
+    min-height: 65vh;
+}
+
+/* ========== BACK BUTTON ========== */
+
+.webdev-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 20px;
+    color: var(--web-chocolate);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: gap 0.3s ease;
+}
+
+.webdev-back i {
+    font-size: 18px;
+}
+
+.webdev-back:hover {
+    color: #8a624a;
+    gap: 14px;
+}
+
+/* ========== MAIN CARD ========== */
+
+.webdev-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 45px;
+
+    background: #fff8f2;
+    border: 1px solid #e5d0c0;
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(66, 35, 20, 0.08);
+}
+
+/* ========== TEXT CONTENT ========== */
+
+.webdev-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--web-chocolate);
+    margin-bottom: 15px;
+}
+
+.webdev-card h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 500;
+    color: var(--web-dark);
+    margin-bottom: 15px;
+}
+
+.webdev-card h1 em {
+    color: var(--web-chocolate);
+    font-weight: 400;
+}
+
+.webdev-description {
+    color: #705343;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.webdev-card h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--web-dark);
+    margin-bottom: 12px;
+}
+
+/* ========== SKILLS ========== */
+
+.webdev-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.webdev-skills span {
+    padding: 7px 12px;
+    background: #f3e6da;
+    border: 1px solid #e1cbb9;
+    border-radius: 20px;
+    color: #694b39;
+    font-size: 12px;
+}
+
+/* ========== ENROLL BUTTON ========== */
+
+.webdev-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 11px 22px;
+    background: var(--web-chocolate);
+    color: white;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.webdev-btn:hover {
+    background: #79503b;
+    color: white;
+}
+
+/* ========== CODE ILLUSTRATION ========== */
+
+.webdev-code {
+    background: #302620;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(55, 35, 25, 0.12);
+}
+
+.webdev-code .code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 17px;
+    background: #3c2f29;
+    color: #cbb6a9;
+    font-size: 11px;
+}
+
+.webdev-code .code-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.webdev-code .code-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d48579;
+}
+
+.webdev-code .code-dots span:nth-child(2) {
+    background: #e0b56d;
+}
+
+.webdev-code .code-dots span:nth-child(3) {
+    background: #93ac85;
+}
+
+.webdev-code pre {
+    margin: 0;
+    padding: 22px;
+    color: #efe4d7;
+    font-size: 12px;
+    line-height: 1.9;
+    overflow-x: auto;
+}
+
+.webdev-code .code-purple {
+    color: #b9b8f0;
+}
+
+.webdev-code .code-pink {
+    color: #df9fac;
+}
+
+.webdev-code .code-green {
+    color: #a5c99c;
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+    .webdev-card {
+        max-width: 700px;
+        padding: 30px;
+    }
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+    .webdev-page {
+        padding: 25px 0 40px;
+        min-height: auto;
+    }
+
+    .webdev-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .webdev-card h1 {
+        font-size: 32px;
+    }
+
+    .webdev-description {
+        font-size: 13px;
+    }
+
+    .webdev-skills {
+        margin-bottom: 20px;
+    }
+
+    .webdev-code pre {
+        font-size: 11px;
+        padding: 16px;
+    }
+}
