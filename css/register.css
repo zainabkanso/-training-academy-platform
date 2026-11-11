@@ -461,3 +461,120 @@
         padding: 7px 8px;
     }
 }
+
+
+/* ========== TABLET ========== */
+
+@media (max-width: 1199px) {
+
+    .registration-decoration {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .registration-page {
+        padding: 40px 0 55px;
+    }
+
+    .registration-card {
+        max-width: 520px;
+        padding: 25px 30px;
+    }
+
+    .registration-heading h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    .registration-page {
+        padding: 25px 0 40px;
+    }
+
+    .registration-intro {
+        margin-bottom: 15px;
+    }
+
+    .registration-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .registration-card {
+        width: 100%;
+        max-width: 520px;
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .registration-heading {
+        margin-bottom: 18px;
+    }
+
+    .registration-heading h1 {
+        font-size: 27px;
+    }
+
+    .registration-heading p {
+        font-size: 13px;
+    }
+
+    .registration-divider {
+        margin-top: 15px;
+    }
+
+    .registration-divider span {
+        width: 50px;
+    }
+
+    .registration-card .row.g-3 {
+        --bs-gutter-y: 12px;
+    }
+
+    .registration-card .form-label {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .registration-card .form-control,
+    .registration-card .form-select {
+        font-size: 16px;
+        min-width: 0;
+        padding: 9px 8px;
+    }
+
+    .registration-card .input-group-text {
+        padding: 9px;
+    }
+
+    .registration-card textarea {
+        min-height: 80px;
+    }
+
+    .registration-submit {
+        padding: 11px;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
+
+
+/* ========== SMALL MOBILE ========== */
+
+@media (max-width: 375px) {
+
+    .registration-card {
+        padding: 20px 13px;
+    }
+
+    .registration-heading h1 {
+        font-size: 25px;
+    }
+}
+

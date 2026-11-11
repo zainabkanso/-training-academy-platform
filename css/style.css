@@ -702,3 +702,237 @@ a {
     padding-top: 35px;
   }
 }
+
+/* ========== TABLET ========== */
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+    .academy-navbar .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .academy-logo {
+        font-size: 25px;
+    }
+
+    .academy-nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Homepage */
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(44px, 6vw, 60px);
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .benefit-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .about-section {
+        padding: 45px 0;
+    }
+
+    .cta-banner {
+        padding: 30px;
+    }
+}
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .academy-navbar .container {
+        gap: 12px;
+    }
+
+    .academy-logo {
+        font-size: 22px;
+    }
+
+    .nav-register {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .academy-nav-links {
+        gap: 10px 18px !important;
+    }
+
+    .academy-nav-links .nav-link {
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(36px, 9vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Featured Courses */
+    .featured-section {
+        padding: 25px 0 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .course-card .card-img-top {
+        height: 190px;
+    }
+
+    .course-card .card-body {
+        padding: 18px;
+    }
+
+    .course-card .card-title {
+        font-size: 22px;
+    }
+
+    /* Benefits */
+    .benefits-section {
+        padding: 20px 0 35px;
+    }
+
+    .benefit-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .benefit-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .benefit-icon i {
+        font-size: 24px;
+    }
+
+    /* About */
+    .about-section {
+        padding: 35px 0;
+    }
+
+    .about-section h2 {
+        font-size: 30px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 20px 0 40px;
+    }
+
+    .cta-banner {
+        padding: 25px 20px;
+    }
+
+    .cta-banner h2 {
+        font-size: 27px;
+    }
+
+    .cta-banner p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .academy-footer {
+        padding: 30px 0 15px;
+    }
+
+    .academy-footer .row {
+        --bs-gutter-y: 22px;
+    }
+
+    .footer-logo {
+        font-size: 24px;
+    }
+
+    .footer-description {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .academy-footer h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+}
+
+
+/* ========== SMALL MOBILE ========== */
+
+@media (max-width: 375px) {
+
+    .academy-logo {
+        font-size: 19px;
+    }
+
+    .nav-register {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    .academy-nav-links {
+        gap: 8px 12px !important;
+    }
+
+    .academy-nav-links .nav-link {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+}
